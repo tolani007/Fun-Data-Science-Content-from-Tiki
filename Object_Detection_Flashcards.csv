@@ -1,0 +1,12 @@
+Question,Answer
+What is the difference between object detection and image classification?,"Image classification assigns a single label to an entire image, whereas object detection locates multiple objects within an image by predicting bounding boxes."
+What are the main object detection algorithms?,"Faster R-CNN, YOLO (You Only Look Once), SSD (Single Shot MultiBox Detector), RetinaNet."
+What are anchor boxes in object detection?,Predefined bounding boxes used to detect objects at different sizes and aspect ratios.
+What is IoU (Intersection over Union) and how is it used in object detection?,IoU measures the overlap between a predicted and ground truth bounding box. It helps filter overlapping detections using Non-Maximum Suppression (NMS).
+What is Non-Maximum Suppression (NMS) in object detection?,A technique to remove duplicate detections by keeping the bounding box with the highest confidence score and eliminating others with high IoU.
+What is the difference between YOLO and Faster R-CNN?,"YOLO is faster and suited for real-time detection, while Faster R-CNN is more accurate but slower."
+How would you handle small object detection in an image?,"Use higher resolution images, Feature Pyramid Networks (FPN), increase the number of anchor boxes, and train with synthetic images."
+How can you improve the performance of an object detection model?,"Use transfer learning, apply data augmentation, use hard negative mining, tune hyperparameters, and ensure a balanced dataset."
+What are common evaluation metrics for object detection?,"Mean Average Precision (mAP), IoU (Intersection over Union), Precision & Recall, FPS (Frames per Second)."
+"You trained an object detection model, but it misses some objects in images. What do you do?","Increase training data, lower object confidence threshold, increase anchor boxes, check for class imbalance, or try a different model."
+"Your model detects objects correctly, but the bounding boxes are inaccurate. How do you fix this?","Increase IoU threshold, use higher resolution images, try a different loss function (e.g., GIoU Loss), or use a model with Feature Pyramid Networks (FPN)."
